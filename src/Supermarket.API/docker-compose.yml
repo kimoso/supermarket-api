@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  supermarket.api:
+    image: ${DOCKER_REGISTRY-}supermarket
+    build:
+      context: .
+      dockerfile: ./Dockerfile
